@@ -1,0 +1,118 @@
+body {
+    display: grid;
+    color: var(--white);
+}
+
+nav {
+    height: 10vh;
+}
+
+
+.pagina_contacto {
+    height: 90vh;
+    background-color: var(--main_bg);
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+}
+
+.form_contenedor {
+    display: grid;
+    grid-area: 2/4/10/-3;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: 40% auto 2rem;
+    background-color: var(--white);
+}
+
+.form {
+    display: grid;
+    grid-area: 2/2/10/2;
+    background-color: var(--white);
+    grid-template-rows: repeat(12, 1fr);
+    color: var(--black);
+}
+
+.form div {
+    grid-row: 1;
+    font-size: var(--big-clamped-font-size);
+    color: var(--main_bg);
+}
+
+.form label {
+    color: var(--black);
+    align-self: end;
+    text-align: start;
+}
+
+textarea {
+    width: 100%;
+    height: 300%;
+    resize: none;
+}
+
+.form_boton_enviar {
+    grid-area: 13/1/13/1;
+    background-color: var(--main_bg);
+    border: none;
+    border-radius: 1rem;
+    color: var(--white);
+    cursor: pointer;
+    margin: 0 3rem;
+    padding: 0.5rem 0;
+}
+
+.contacto_info {
+    display: grid;
+    grid-area: 2/3/10/6;
+    grid-template: 2% repeat(5, 1fr) 2% / 2% 20% auto 2%;
+    background-color: var(--light_blue);
+    -webkit-animation: anim1;
+    animation: anim1;
+    z-index: 2;
+    place-items: center / start;
+    text-align: start;
+    margin: 5% 20% 5% -20%;
+}
+
+.info_contacto_titulo {
+    grid-area: 2/1/2/5;
+    text-align: center;
+    font-size: var(--big-clamped-font-size);
+}
+
+.info_direccion {
+    grid-area: 3/3/3/3;
+}
+
+.info_email {
+    grid-area: 4/3/4/3;
+    align-items: start;
+}
+
+.info_telefono {
+    grid-area: 5/3/5/3;
+}
+
+.icono_direccion {
+    grid-area: 3/2/3/2;
+}
+
+.icono_email {
+    grid-area: 4/2/4/2;
+}
+
+.icono_telefono {
+    grid-area: 5/2/5/2;
+}
+
+.icono_linkedin {
+    grid-area: 6/2/6/2;
+}
+
+.icono_github {
+    grid-area: 6/3/6/3;
+}
+
+.icono_direccion, .icono_email, .icono_telefono, .icono_linkedin {
+    margin: 20%;
+    margin-top: 0;
+}

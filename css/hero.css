@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    background-color: var(--main_bg);
+    color: var(--white);
+}
+
+nav {
+    height: 10vh;
+}
+
+.hero_contenedor {
+    display: grid;
+}
+
+.intro_titulo {
+    font-size: 2rem;
+}
+
+.intro_titulo_sub {
+    font-size: 1.5rem;
+}
+
+.intro_titulo, .intro_titulo_sub {
+    display: grid;
+    place-self: center;
+}
+
+.ver_muestrario {
+    display: grid;
+    place-self: center;
+    padding: 10px;
+    background-color: var(--light_blue);
+    margin-bottom: 25%;
+    border-radius: 10px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.ver_muestrario:hover {
+    color: rgb(219, 159, 47);
+}

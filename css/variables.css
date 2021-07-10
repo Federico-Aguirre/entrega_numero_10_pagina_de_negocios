@@ -1,0 +1,25 @@
+/**variables**/
+
+:root {
+    --light_blue: rgb(45, 78, 221);
+    --main_bg: #132b63;
+    --white: #fff;
+    --black: #000000;
+    --big-min: 1.3rem;
+    --big-max: 2rem;
+    --big-clamped-font-size: clamp(var(--big-min), 1.5vw, var(--big-max));
+    --bigger-min: 1.5rem;
+    --bigger-max: 2.5rem;
+    --bigger-clamped-font-size: clamp(
+        var(--bigger-min),
+        3.5vw,
+        var(--bigger-max)
+    );
+    --biggest-min: 1.7rem;
+    --biggest-max: 3rem;
+    --biggest-clamped-font-size: clamp(
+        var(--biggest-min),
+        4vw,
+        var(--biggest-max)
+    );
+}

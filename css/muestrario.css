@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    background-color: var(--main_bg);
+    color: var(--white);
+}
+
+nav {
+    height: 10vh;
+}
+
+.muestrario_contenedor {
+    display: grid;
+    justify-self: center;
+    height: 30%;
+    width: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: var(--light_blue);
+}
+
+.carousel-indicators {
+    background-color: rgb(121, 118, 118);
+    margin: 0 20%;
+}
